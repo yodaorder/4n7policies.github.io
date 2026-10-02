@@ -1,0 +1,3324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>4n7 Moderation — Privacy Policy</title>
+
+    <meta
+        name="description"
+        content="Official Privacy Policy for 4n7 Moderation."
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+
+            --black-0: #030303;
+            --black-1: #070707;
+            --black-2: #0c0c0c;
+            --black-3: #111111;
+            --black-4: #161616;
+
+            --red-1: #ff1f1f;
+            --red-2: #d90000;
+            --red-3: #9e0000;
+
+            --red-soft:
+                rgba(255, 31, 31, 0.12);
+
+            --red-border:
+                rgba(255, 31, 31, 0.26);
+
+            --white: #f7f7f7;
+            --gray-1: #cfcfcf;
+            --gray-2: #9b9b9b;
+            --gray-3: #707070;
+            --gray-4: #454545;
+
+            --border:
+                rgba(255, 255, 255, 0.075);
+
+            --shadow:
+                0 25px 80px rgba(0, 0, 0, 0.60);
+
+            --radius: 18px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 95px;
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            color: var(--white);
+
+            font-family:
+                "Inter",
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            line-height: 1.75;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 0%,
+                    rgba(255, 0, 0, 0.14),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 95% 15%,
+                    rgba(190, 0, 0, 0.10),
+                    transparent 27%
+                ),
+
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(255, 0, 0, 0.07),
+                    transparent 30%
+                ),
+
+                var(--black-0);
+
+            overflow-x: hidden;
+        }
+
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -2;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(255, 255, 255, 0.018) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.018) 1px,
+                    transparent 1px
+                );
+
+            background-size:
+                45px 45px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black 0%,
+                    rgba(0, 0, 0, 0.7) 45%,
+                    transparent 100%
+                );
+        }
+
+
+        body::after {
+
+            content: "";
+
+            position: fixed;
+
+            width: 500px;
+            height: 500px;
+
+            top: -240px;
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            pointer-events: none;
+
+            z-index: -1;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255, 0, 0, 0.15),
+                    transparent 68%
+                );
+
+            filter: blur(12px);
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        /* =====================================
+           TOP BAR
+        ===================================== */
+
+        .topbar {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            border-bottom:
+                1px solid var(--border);
+
+            background:
+                rgba(3, 3, 3, 0.84);
+
+            backdrop-filter:
+                blur(22px);
+
+            -webkit-backdrop-filter:
+                blur(22px);
+        }
+
+
+        .topbar::after {
+
+            content: "";
+
+            position: absolute;
+
+            bottom: -1px;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255, 30, 30, 0.60),
+                    transparent
+                );
+        }
+
+
+        .topbar-inner {
+
+            width: min(1380px, 94%);
+
+            min-height: 76px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+        }
+
+
+        .brand-logo {
+
+            width: 43px;
+            height: 43px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 13px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ff3434,
+                    #a50000
+                );
+
+            border:
+                1px solid
+                rgba(255, 100, 100, 0.35);
+
+            box-shadow:
+
+                0 0 30px
+                rgba(255, 0, 0, 0.24),
+
+                inset 0 1px 0
+                rgba(255, 255, 255, 0.14);
+
+            font-size: 18px;
+
+            font-weight: 900;
+        }
+
+
+        .brand-text {
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        .brand-title {
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 900;
+
+            letter-spacing: 0.3px;
+        }
+
+
+        .brand-subtitle {
+
+            margin-top: -1px;
+
+            color: var(--gray-3);
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+        }
+
+
+        .top-actions {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+        }
+
+
+        .nav-button {
+
+            padding:
+                9px 14px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 10px;
+
+            color: var(--gray-1);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            transition:
+                all 0.22s ease;
+        }
+
+
+        .nav-button:hover {
+
+            color: white;
+
+            border-color:
+                var(--red-border);
+
+            background:
+                var(--red-soft);
+
+            transform:
+                translateY(-1px);
+        }
+
+
+        .nav-button.primary {
+
+            color: white;
+
+            border-color:
+                rgba(255, 31, 31, 0.40);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 31, 31, 0.18),
+                    rgba(255, 31, 31, 0.06)
+                );
+        }
+
+
+        /* =====================================
+           HERO
+        ===================================== */
+
+        .hero {
+
+            width: min(1380px, 94%);
+
+            margin: auto;
+
+            padding:
+                92px 0 60px;
+        }
+
+
+        .hero-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding:
+                8px 12px;
+
+            border:
+                1px solid
+                var(--red-border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255, 0, 0, 0.06);
+
+            color:
+                #ff7777;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            box-shadow:
+                0 0 30px
+                rgba(255, 0, 0, 0.05);
+        }
+
+
+        .hero-badge-dot {
+
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background:
+                var(--red-1);
+
+            box-shadow:
+                0 0 14px
+                var(--red-1);
+        }
+
+
+        .hero h1 {
+
+            max-width: 1000px;
+
+            margin-top: 24px;
+
+            font-size:
+                clamp(
+                    45px,
+                    7vw,
+                    86px
+                );
+
+            line-height: 0.98;
+
+            letter-spacing:
+                -4px;
+
+            font-weight: 900;
+        }
+
+
+        .hero h1 .red {
+
+            color:
+                var(--red-1);
+
+            text-shadow:
+                0 0 40px
+                rgba(255, 0, 0, 0.16);
+        }
+
+
+        .hero-description {
+
+            max-width: 850px;
+
+            margin-top: 24px;
+
+            color:
+                var(--gray-2);
+
+            font-size: 16px;
+        }
+
+
+        .hero-meta {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 31px;
+        }
+
+
+        .hero-meta-card {
+
+            min-width: 155px;
+
+            padding:
+                13px 16px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 12px;
+
+            background:
+                rgba(255, 255, 255, 0.025);
+
+            box-shadow:
+                inset 0 1px 0
+                rgba(255, 255, 255, 0.025);
+        }
+
+
+        .hero-meta-label {
+
+            color:
+                var(--gray-3);
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing:
+                1.2px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        .hero-meta-value {
+
+            margin-top: 2px;
+
+            color: white;
+
+            font-size: 12px;
+
+            font-weight: 700;
+        }
+
+
+        /* =====================================
+           PRIVACY NOTICE
+        ===================================== */
+
+        .privacy-notice {
+
+            width: min(1380px, 94%);
+
+            margin:
+                0 auto 28px;
+
+            padding:
+                17px 18px;
+
+            display: flex;
+
+            align-items:
+                flex-start;
+
+            gap: 13px;
+
+            border:
+                1px solid
+                var(--red-border);
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(
+                    110deg,
+                    rgba(255, 0, 0, 0.095),
+                    rgba(255, 255, 255, 0.018)
+                );
+
+            box-shadow:
+                0 18px 60px
+                rgba(0, 0, 0, 0.24);
+        }
+
+
+        .privacy-icon {
+
+            flex-shrink: 0;
+
+            width: 32px;
+            height: 32px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 10px;
+
+            color: white;
+
+            background:
+                rgba(255, 20, 20, 0.16);
+
+            border:
+                1px solid
+                rgba(255, 40, 40, 0.25);
+
+            font-size: 13px;
+
+            font-weight: 900;
+        }
+
+
+        .privacy-text strong {
+
+            color: #ff6969;
+
+            font-size: 12px;
+        }
+
+
+        .privacy-text p {
+
+            margin-top: 2px;
+
+            color:
+                var(--gray-2);
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================
+           LAYOUT
+        ===================================== */
+
+        .layout {
+
+            width: min(1380px, 94%);
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                250px
+                minmax(0, 1fr);
+
+            gap: 28px;
+
+            align-items: start;
+        }
+
+
+        /* =====================================
+           SIDEBAR
+        ===================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 99px;
+
+            padding: 17px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                rgba(11, 11, 11, 0.74);
+
+            backdrop-filter:
+                blur(18px);
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .sidebar-heading {
+
+            padding:
+                4px 8px 12px;
+
+            color:
+                var(--gray-3);
+
+            font-size: 9px;
+
+            font-weight: 900;
+
+            letter-spacing:
+                1.6px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        .sidebar-link {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding:
+                9px 10px;
+
+            margin-bottom: 2px;
+
+            border-radius: 9px;
+
+            color:
+                var(--gray-2);
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            transition:
+                all 0.2s ease;
+        }
+
+
+        .sidebar-link span {
+
+            width: 22px;
+
+            color:
+                var(--gray-4);
+
+            font-size: 9px;
+
+            font-weight: 800;
+        }
+
+
+        .sidebar-link:hover {
+
+            color: white;
+
+            background:
+                rgba(255, 0, 0, 0.06);
+        }
+
+
+        .sidebar-link:hover span {
+
+            color:
+                var(--red-1);
+        }
+
+
+        .sidebar-divider {
+
+            height: 1px;
+
+            margin:
+                11px 8px;
+
+            background:
+                var(--border);
+        }
+
+
+        /* =====================================
+           DOCUMENT
+        ===================================== */
+
+        .document {
+
+            min-width: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+        }
+
+
+        .section {
+
+            position: relative;
+
+            padding:
+                34px 35px 35px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(19, 19, 19, 0.94),
+                    rgba(9, 9, 9, 0.94)
+                );
+
+            box-shadow:
+                0 14px 50px
+                rgba(0, 0, 0, 0.30);
+
+            overflow: hidden;
+
+            transition:
+                border-color 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        .section::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255, 31, 31, 0.55),
+                    transparent
+                );
+        }
+
+
+        .section:hover {
+
+            transform:
+                translateY(-2px);
+
+            border-color:
+                rgba(255, 40, 40, 0.18);
+
+            box-shadow:
+                0 22px 65px
+                rgba(0, 0, 0, 0.42);
+        }
+
+
+        .section-head {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .section-number {
+
+            flex-shrink: 0;
+
+            width: 40px;
+            height: 40px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 11px;
+
+            border:
+                1px solid
+                rgba(255, 31, 31, 0.22);
+
+            background:
+                rgba(255, 20, 20, 0.07);
+
+            color:
+                #ff5d5d;
+
+            font-size: 10px;
+
+            font-weight: 900;
+
+            letter-spacing:
+                0.5px;
+        }
+
+
+        .section-title-wrap {
+
+            min-width: 0;
+        }
+
+
+        .section-kicker {
+
+            color:
+                var(--gray-3);
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing:
+                1.3px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        .section h2 {
+
+            margin-top: 1px;
+
+            color: white;
+
+            font-size: 23px;
+
+            line-height: 1.25;
+
+            letter-spacing:
+                -0.45px;
+        }
+
+
+        .section p {
+
+            color:
+                var(--gray-2);
+
+            font-size: 13.5px;
+        }
+
+
+        .section p + p {
+
+            margin-top:
+                14px;
+        }
+
+
+        .section ul {
+
+            margin:
+                15px 0 0 4px;
+
+            padding-left:
+                17px;
+
+            color:
+                var(--gray-2);
+
+            font-size:
+                13.5px;
+        }
+
+
+        .section li {
+
+            margin:
+                8px 0;
+
+            padding-left:
+                4px;
+        }
+
+
+        .section li::marker {
+
+            color:
+                var(--red-1);
+        }
+
+
+        .section strong {
+
+            color: white;
+        }
+
+
+        .inline-link {
+
+            color:
+                #ff7272;
+
+            font-weight:
+                700;
+
+            border-bottom:
+                1px dotted
+                rgba(255, 80, 80, 0.45);
+        }
+
+
+        .inline-link:hover {
+
+            color: white;
+
+            border-bottom-color:
+                white;
+        }
+
+
+        /* =====================================
+           DATA TABLE
+        ===================================== */
+
+        .data-grid {
+
+            margin-top:
+                22px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+
+        .data-row {
+
+            display: grid;
+
+            grid-template-columns:
+                180px
+                minmax(0, 1fr);
+
+            gap: 15px;
+
+            padding:
+                15px 16px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                13px;
+
+            background:
+                rgba(255, 255, 255, 0.018);
+        }
+
+
+        .data-name {
+
+            color:
+                white;
+
+            font-size:
+                12px;
+
+            font-weight:
+                800;
+        }
+
+
+        .data-description {
+
+            color:
+                var(--gray-2);
+
+            font-size:
+                12px;
+        }
+
+
+        /* =====================================
+           CALLOUT
+        ===================================== */
+
+        .callout {
+
+            margin-top:
+                19px;
+
+            padding:
+                16px 17px;
+
+            display: flex;
+
+            align-items:
+                flex-start;
+
+            gap: 13px;
+
+            border-radius:
+                13px;
+
+            background:
+                rgba(255, 255, 255, 0.025);
+
+            border:
+                1px solid
+                var(--border);
+        }
+
+
+        .callout.red {
+
+            background:
+                rgba(255, 0, 0, 0.055);
+
+            border-color:
+                rgba(255, 31, 31, 0.18);
+        }
+
+
+        .callout-icon {
+
+            flex-shrink: 0;
+
+            width: 30px;
+            height: 30px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 9px;
+
+            background:
+                rgba(255, 0, 0, 0.11);
+
+            color:
+                #ff6666;
+
+            font-size:
+                13px;
+
+            font-weight: 900;
+        }
+
+
+        .callout-content strong {
+
+            display: block;
+
+            margin-bottom: 2px;
+
+            color:
+                white;
+
+            font-size:
+                12px;
+        }
+
+
+        .callout-content {
+
+            color:
+                var(--gray-2);
+
+            font-size:
+                12px;
+        }
+
+
+        /* =====================================
+           CONTACT
+        ===================================== */
+
+        .contact-grid {
+
+            margin-top:
+                22px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(0, 1fr)
+                );
+
+            gap: 11px;
+        }
+
+
+        .contact-card {
+
+            padding:
+                17px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                13px;
+
+            background:
+                rgba(255, 255, 255, 0.018);
+
+            transition:
+                all 0.2s ease;
+        }
+
+
+        .contact-card:hover {
+
+            border-color:
+                rgba(255, 40, 40, 0.19);
+
+            background:
+                rgba(255, 0, 0, 0.035);
+        }
+
+
+        .contact-label {
+
+            color:
+                var(--gray-3);
+
+            font-size:
+                9px;
+
+            font-weight:
+                900;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                1.2px;
+        }
+
+
+        .contact-value {
+
+            margin-top:
+                5px;
+
+            color:
+                white;
+
+            font-size:
+                12.5px;
+
+            font-weight:
+                700;
+
+            overflow-wrap:
+                anywhere;
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        .footer {
+
+            width: min(1380px, 94%);
+
+            margin:
+                0 auto;
+
+            padding:
+                46px 0 38px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            border-top:
+                1px solid
+                var(--border);
+
+            color:
+                var(--gray-3);
+
+            font-size:
+                11px;
+        }
+
+
+        .footer-left strong {
+
+            color:
+                var(--gray-1);
+        }
+
+
+        .footer-links {
+
+            display:
+                flex;
+
+            gap:
+                15px;
+        }
+
+
+        .footer-links a:hover {
+
+            color:
+                #ff6868;
+        }
+
+
+        /* =====================================
+           RESPONSIVE
+        ===================================== */
+
+        @media (max-width: 950px) {
+
+            .layout {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .sidebar {
+
+                display:
+                    none;
+            }
+
+
+            .hero {
+
+                padding-top:
+                    64px;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .topbar-inner {
+
+                min-height:
+                    67px;
+            }
+
+
+            .top-actions {
+
+                display:
+                    none;
+            }
+
+
+            .hero {
+
+                padding:
+                    48px 0 40px;
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    48px;
+
+                letter-spacing:
+                    -2.5px;
+            }
+
+
+            .hero-description {
+
+                font-size:
+                    14px;
+            }
+
+
+            .section {
+
+                padding:
+                    26px 21px;
+            }
+
+
+            .section h2 {
+
+                font-size:
+                    20px;
+            }
+
+
+            .data-row {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    5px;
+            }
+
+
+            .contact-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .footer {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         TOP BAR
+    ===================================== -->
+
+    <header class="topbar">
+
+        <div class="topbar-inner">
+
+
+            <div class="brand">
+
+                <div class="brand-logo">
+                    4
+                </div>
+
+
+                <div class="brand-text">
+
+                    <div class="brand-title">
+                        4n7 Moderation
+                    </div>
+
+                    <div class="brand-subtitle">
+                        Privacy Center
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <a
+                    class="nav-button"
+                    href="index.html"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    class="nav-button"
+                    href="terms.html"
+                >
+                    Terms of Service
+                </a>
+
+
+                <a
+                    class="nav-button primary"
+                    href="#requests"
+                >
+                    Data Requests
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         HERO
+    ===================================== -->
+
+    <section class="hero">
+
+
+        <div class="hero-badge">
+
+            <span class="hero-badge-dot"></span>
+
+            Official Privacy Document
+
+        </div>
+
+
+        <h1>
+
+            Privacy
+
+            <span class="red">
+                Policy
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            This Privacy Policy explains what information
+            4n7 Moderation may process, why it is used,
+            how it is stored, how long it may be retained,
+            and how users and server administrators can
+            request deletion.
+
+        </p>
+
+
+        <div class="hero-meta">
+
+
+            <div class="hero-meta-card">
+
+                <div class="hero-meta-label">
+                    Document
+                </div>
+
+                <div class="hero-meta-value">
+                    Privacy Policy
+                </div>
+
+            </div>
+
+
+            <div class="hero-meta-card">
+
+                <div class="hero-meta-label">
+                    Version
+                </div>
+
+                <div class="hero-meta-value">
+                    1.0
+                </div>
+
+            </div>
+
+
+            <div class="hero-meta-card">
+
+                <div class="hero-meta-label">
+                    Last Updated
+                </div>
+
+                <div class="hero-meta-value">
+                    October 2, 2026
+                </div>
+
+            </div>
+
+
+            <div class="hero-meta-card">
+
+                <div class="hero-meta-label">
+                    Service
+                </div>
+
+                <div class="hero-meta-value">
+                    4n7 Moderation
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         PRIVACY NOTICE
+    ===================================== -->
+
+    <div class="privacy-notice">
+
+
+        <div class="privacy-icon">
+            P
+        </div>
+
+
+        <div class="privacy-text">
+
+            <strong>
+                Your information matters.
+            </strong>
+
+            <p>
+                4n7 Moderation is designed to process only the
+                information needed to provide its moderation,
+                logging, AutoMod, snipe, and server-management
+                functionality.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================
+         MAIN LAYOUT
+    ===================================== -->
+
+    <div class="layout">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-heading">
+                Contents
+            </div>
+
+
+            <a
+                class="sidebar-link"
+                href="#overview"
+            >
+                <span>01</span>
+                Overview
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#data-collected"
+            >
+                <span>02</span>
+                Data We Process
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#collection"
+            >
+                <span>03</span>
+                How Data Is Collected
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#use"
+            >
+                <span>04</span>
+                How We Use Data
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#discord"
+            >
+                <span>05</span>
+                Discord Data
+            </a>
+
+
+            <div class="sidebar-divider"></div>
+
+
+            <a
+                class="sidebar-link"
+                href="#sharing"
+            >
+                <span>06</span>
+                Sharing
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#database"
+            >
+                <span>07</span>
+                Storage & Security
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#retention"
+            >
+                <span>08</span>
+                Data Retention
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#deletion"
+            >
+                <span>09</span>
+                Data Deletion
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#requests"
+            >
+                <span>10</span>
+                Privacy Requests
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#rights"
+            >
+                <span>11</span>
+                Privacy Rights
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#children"
+            >
+                <span>12</span>
+                Age & Children
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#third-party"
+            >
+                <span>13</span>
+                Third-Party Services
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#security"
+            >
+                <span>14</span>
+                Security
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#changes"
+            >
+                <span>15</span>
+                Policy Changes
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#contact"
+            >
+                <span>16</span>
+                Contact
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#effective"
+            >
+                <span>17</span>
+                Effective Date
+            </a>
+
+
+        </aside>
+
+
+
+        <!-- DOCUMENT -->
+
+        <main class="document">
+
+
+            <!-- 01 -->
+
+            <section
+                class="section"
+                id="overview"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        01
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Introduction
+                        </div>
+
+                        <h2>
+                            Privacy Policy Overview
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    This Privacy Policy explains how 4n7 Moderation
+                    ("4n7", "the Bot", "the Service", "we", "us",
+                    or "our") processes information when you or
+                    a Discord server uses the Service.
+
+                </p>
+
+
+                <p>
+
+                    This policy applies to information processed
+                    through the Discord application and related
+                    systems operated for 4n7 Moderation.
+
+                </p>
+
+
+                <div class="callout red">
+
+                    <div class="callout-icon">
+                        !
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            We aim to collect only what the Bot needs.
+                        </strong>
+
+                        Information processed by the Bot should be
+                        limited to what is reasonably necessary to
+                        provide its stated functionality.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 02 -->
+
+            <section
+                class="section"
+                id="data-collected"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        02
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Information
+                        </div>
+
+                        <h2>
+                            Data We Process
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Depending on how a server uses 4n7 Moderation,
+                    the Service may process the following categories
+                    of information:
+
+                </p>
+
+
+                <div class="data-grid">
+
+
+                    <div class="data-row">
+
+                        <div class="data-name">
+                            Discord User IDs
+                        </div>
+
+                        <div class="data-description">
+                            Used to identify users involved in
+                            commands, warnings, moderation actions,
+                            permissions, and snipe records.
+                        </div>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <div class="data-name">
+                            Discord Server IDs
+                        </div>
+
+                        <div class="data-description">
+                            Used to associate configuration,
+                            moderation information, and other
+                            server-specific data with the correct
+                            Discord server.
+                        </div>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <div class="data-name">
+                            Channel IDs
+                        </div>
+
+                        <div class="data-description">
+                            Used for channel-specific configuration,
+                            moderation logs, snipe information,
+                            and channel-management functionality.
+                        </div>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <div class="data-name">
+                            Role IDs
+                        </div>
+
+                        <div class="data-description">
+                            Used for moderator and administrator
+                            permissions, staff-role configuration,
+                            and role-management features.
+                        </div>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <div class="data-name">
+                            Moderation Records
+                        </div>
+
+                        <div class="data-description">
+                            May include the target user ID,
+                            moderator ID, action, reason,
+                            duration, and timestamps.
+                        </div>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <div class="data-name">
+                            Warning Records
+                        </div>
+
+                        <div class="data-description">
+                            May include the server ID, warned
+                            user ID, moderator ID, warning reason,
+                            warning identifier, and timestamp.
+                        </div>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <div class="data-name">
+                            Message Information
+                        </div>
+
+                        <div class="data-description">
+                            Certain moderation and snipe features
+                            may process message IDs, message content,
+                            edited content, channel IDs, and author
+                            IDs.
+                        </div>
+
+                    </div>
+
+
+                    <div class="data-row">
+
+                        <div class="data-name">
+                            Server Configuration
+                        </div>
+
+                        <div class="data-description">
+                            May include configured moderation roles,
+                            administrator roles, log channels,
+                            AutoMod settings, ignored channels,
+                            and other server-specific settings.
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 03 -->
+
+            <section
+                class="section"
+                id="collection"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        03
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Collection
+                        </div>
+
+                        <h2>
+                            How Data Is Collected
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Information may be processed automatically
+                    when Discord sends relevant event or command
+                    information to the Bot.
+
+                </p>
+
+
+                <p>
+
+                    For example, a moderation command may require
+                    a user's Discord ID and the server's Discord ID
+                    to identify the target and the server in which
+                    the action was requested.
+
+                </p>
+
+
+                <p>
+
+                    Message-related features may process information
+                    when the Bot receives Discord message events
+                    needed for AutoMod, deleted-message detection,
+                    edited-message detection, or related functionality.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 04 -->
+
+            <section
+                class="section"
+                id="use"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        04
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Purpose
+                        </div>
+
+                        <h2>
+                            How We Use Data
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Information may be used for purposes including:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Providing moderation commands
+                    </li>
+
+                    <li>
+                        Storing and displaying warnings
+                    </li>
+
+                    <li>
+                        Recording moderation actions
+                    </li>
+
+                    <li>
+                        Providing AutoMod functionality
+                    </li>
+
+                    <li>
+                        Providing deleted-message and edited-message
+                        snipe functionality
+                    </li>
+
+                    <li>
+                        Checking server-specific permissions
+                    </li>
+
+                    <li>
+                        Applying server-specific configuration
+                    </li>
+
+                    <li>
+                        Sending configured moderation logs
+                    </li>
+
+                    <li>
+                        Maintaining, securing, and troubleshooting
+                        the Service
+                    </li>
+
+                </ul>
+
+
+                <div class="callout">
+
+                    <div class="callout-icon">
+                        i
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            No unrelated data profiling.
+                        </strong>
+
+                        API Data should be used only as necessary
+                        to provide the Bot's stated functionality
+                        and should not be used for unrelated
+                        profiling or advertising purposes.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 05 -->
+
+            <section
+                class="section"
+                id="discord"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        05
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Platform
+                        </div>
+
+                        <h2>
+                            Discord Data
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    4n7 Moderation uses Discord's APIs and platform
+                    functionality to provide its features.
+
+                </p>
+
+
+                <p>
+
+                    Discord data is processed in accordance with
+                    this Privacy Policy, applicable law, and the
+                    policies that apply to Discord developers.
+
+                </p>
+
+
+                <p>
+
+                    You can review Discord's own Privacy Policy
+                    for information about how Discord processes
+                    information on its platform.
+
+                </p>
+
+
+                <p>
+
+                    <a
+                        class="inline-link"
+                        href="https://discord.com/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Discord Privacy Policy →
+                    </a>
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 06 -->
+
+            <section
+                class="section"
+                id="sharing"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        06
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Disclosure
+                        </div>
+
+                        <h2>
+                            Data Sharing
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    4n7 Moderation does not sell Discord API Data.
+                    It is not intended to provide Discord data to
+                    advertising networks or data brokers.
+
+                </p>
+
+
+                <p>
+
+                    Data may be provided to service providers that
+                    are necessary to operate the Bot, such as hosting
+                    or database providers, to the extent necessary
+                    to provide the Service.
+
+                </p>
+
+
+                <p>
+
+                    Information may also be disclosed when required
+                    by applicable law, legal process, or a valid
+                    governmental request.
+
+                </p>
+
+
+                <p>
+
+                    Server administrators may also receive moderation
+                    information through the Bot's normal functionality,
+                    such as moderation logs or warning commands.
+                    This is part of the Bot's intended operation.
+
+                </p>
+
+
+                <div class="callout red">
+
+                    <div class="callout-icon">
+                        X
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            No sale of Discord data.
+                        </strong>
+
+                        4n7 Moderation does not sell, license,
+                        or otherwise commercially trade Discord
+                        API Data.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 07 -->
+
+            <section
+                class="section"
+                id="database"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        07
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Infrastructure
+                        </div>
+
+                        <h2>
+                            Storage & Security
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Data required by the Service may be stored in
+                    databases and other infrastructure used to
+                    operate 4n7 Moderation.
+
+                </p>
+
+
+                <p>
+
+                    The Bot is designed to use identifier-based
+                    records so server, channel, role, user, warning,
+                    and moderation information can be associated
+                    with the correct Discord resources.
+
+                </p>
+
+
+                <p>
+
+                    Reasonable technical and organizational measures
+                    should be used to protect stored information from
+                    unauthorized access, alteration, disclosure,
+                    or destruction.
+
+                </p>
+
+
+                <div class="callout">
+
+                    <div class="callout-icon">
+                        S
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Security is an ongoing process.
+                        </strong>
+
+                        No internet-based service can guarantee
+                        absolute security. Security controls may
+                        change as the Bot and its infrastructure
+                        develop.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 08 -->
+
+            <section
+                class="section"
+                id="retention"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        08
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Retention
+                        </div>
+
+                        <h2>
+                            Data Retention
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Information is intended to be retained only
+                    for as long as reasonably necessary to provide
+                    the feature for which it was collected, satisfy
+                    operational requirements, address abuse or
+                    security issues, or meet applicable legal
+                    obligations.
+
+                </p>
+
+
+                <p>
+
+                    Warning records may remain available until they
+                    are removed by authorized server staff, deleted
+                    through an approved data request, or otherwise
+                    no longer required.
+
+                </p>
+
+
+                <p>
+
+                    Moderation logs may be retained to provide
+                    server moderation history and security records.
+
+                </p>
+
+
+                <p>
+
+                    Message information associated with snipe
+                    functionality may be retained according to
+                    the Bot's configured storage and cleanup
+                    mechanisms.
+
+                </p>
+
+
+                <div class="callout red">
+
+                    <div class="callout-icon">
+                        R
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Retention periods may change.
+                        </strong>
+
+                        As the Bot develops, automated cleanup and
+                        configurable retention periods may be
+                        introduced or changed.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 09 -->
+
+            <section
+                class="section"
+                id="deletion"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        09
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Deletion
+                        </div>
+
+                        <h2>
+                            Data Deletion
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    You may request deletion of information
+                    associated with your use of 4n7 Moderation.
+
+                </p>
+
+
+                <p>
+
+                    Depending on the request and the applicable
+                    legal requirements, we may need to verify the
+                    request before taking action.
+
+                </p>
+
+
+                <p>
+
+                    Some information may need to be retained when
+                    required by law, necessary to establish or
+                    defend legal claims, needed for security,
+                    or otherwise permitted or required by applicable
+                    law.
+
+                </p>
+
+
+                <p>
+
+                    If the Bot has been removed from a server and
+                    its information is no longer required for a
+                    permitted feature or legal purpose, the
+                    corresponding data should be deleted or
+                    de-identified within a reasonable period.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 10 -->
+
+            <section
+                class="section"
+                id="requests"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        10
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Requests
+                        </div>
+
+                        <h2>
+                            Privacy & Data Requests
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    To request access, correction, or deletion
+                    of information associated with 4n7 Moderation,
+                    contact us using the information provided in
+                    the Contact section of this policy.
+
+                </p>
+
+
+                <p>
+
+                    To help locate the correct records, a request
+                    may need to include relevant Discord identifiers,
+                    such as a user ID or server ID, along with
+                    enough information to verify the request.
+
+                </p>
+
+
+                <p>
+
+                    Do not send your Discord password, bot token,
+                    authentication token, or other account
+                    credentials as part of a privacy request.
+
+                </p>
+
+
+                <div class="callout red">
+
+                    <div class="callout-icon">
+                        !
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Never send credentials.
+                        </strong>
+
+                        4n7 Moderation will not require your Discord
+                        password or authentication token to process
+                        a normal privacy request.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 11 -->
+
+            <section
+                class="section"
+                id="rights"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        11
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Your Choices
+                        </div>
+
+                        <h2>
+                            Privacy Rights
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Depending on your location and applicable law,
+                    you may have rights relating to personal
+                    information processed by the Service.
+
+                </p>
+
+
+                <p>
+                    These may include, where applicable:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Requesting access to information
+                    </li>
+
+                    <li>
+                        Requesting correction of inaccurate information
+                    </li>
+
+                    <li>
+                        Requesting deletion of information
+                    </li>
+
+                    <li>
+                        Objecting to or restricting certain processing
+                    </li>
+
+                    <li>
+                        Receiving information about how data is processed
+                    </li>
+
+                </ul>
+
+
+                <p>
+
+                    The availability and scope of these rights
+                    depends on the laws applicable to you and
+                    the circumstances of the request.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 12 -->
+
+            <section
+                class="section"
+                id="children"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        12
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Age
+                        </div>
+
+                        <h2>
+                            Children & Age Requirements
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    4n7 Moderation is a third-party Discord
+                    application and is subject to Discord's
+                    platform requirements.
+
+                </p>
+
+
+                <p>
+
+                    We do not intentionally request passwords,
+                    account credentials, or unrelated personal
+                    information from Discord users.
+
+                </p>
+
+
+                <p>
+
+                    The Service must not be used in a manner that
+                    violates applicable age requirements, privacy
+                    laws, or Discord's policies.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 13 -->
+
+            <section
+                class="section"
+                id="third-party"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        13
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Providers
+                        </div>
+
+                        <h2>
+                            Third-Party Services
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    4n7 Moderation may rely on third-party
+                    infrastructure to operate, such as hosting,
+                    databases, monitoring, or other technical
+                    services.
+
+                </p>
+
+
+                <p>
+
+                    Such providers may process information on
+                    behalf of the Service only to the extent
+                    necessary to provide their services to 4n7
+                    Moderation.
+
+                </p>
+
+
+                <p>
+
+                    The Bot may also rely on Discord as the platform
+                    through which its functionality is provided.
+
+                </p>
+
+
+                <div class="callout">
+
+                    <div class="callout-icon">
+                        3
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Third-party services may have their own policies.
+                        </strong>
+
+                        Their handling of information may also be
+                        governed by their own terms and privacy
+                        policies.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 14 -->
+
+            <section
+                class="section"
+                id="security"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        14
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Protection
+                        </div>
+
+                        <h2>
+                            Security Practices
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    We aim to use reasonable safeguards to protect
+                    information processed by the Service.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Access to infrastructure should be restricted
+                        to authorized individuals and systems
+                    </li>
+
+                    <li>
+                        Database credentials should be kept private
+                    </li>
+
+                    <li>
+                        Bot authentication tokens should never be
+                        publicly disclosed
+                    </li>
+
+                    <li>
+                        Access controls should be reviewed as the
+                        Service develops
+                    </li>
+
+                    <li>
+                        Security incidents should be investigated
+                        and addressed appropriately
+                    </li>
+
+                </ul>
+
+
+                <p>
+
+                    Despite these measures, no method of electronic
+                    storage or transmission is guaranteed to be
+                    completely secure.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 15 -->
+
+            <section
+                class="section"
+                id="changes"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        15
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Updates
+                        </div>
+
+                        <h2>
+                            Changes to This Privacy Policy
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    This Privacy Policy may be updated when the
+                    Service changes, when our data practices change,
+                    when legal requirements change, or when additional
+                    clarification is needed.
+
+                </p>
+
+
+                <p>
+
+                    The current version will be published on this
+                    page together with its updated "Last Updated"
+                    date.
+
+                </p>
+
+
+                <div class="callout red">
+
+                    <div class="callout-icon">
+                        ↻
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Check the revision date.
+                        </strong>
+
+                        The date shown at the top of this document
+                        identifies the currently published version.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 16 -->
+
+            <section
+                class="section"
+                id="contact"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        16
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Support
+                        </div>
+
+                        <h2>
+                            Contact
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Questions about this Privacy Policy,
+                    data processing, or privacy requests can
+                    be submitted through the contact methods below.
+
+                </p>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-label">
+                            Developer
+                        </div>
+
+                        <div class="contact-value">
+                            4n7
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-label">
+                            Support Server
+                        </div>
+
+                        <div class="contact-value">
+
+                            <a
+                                href="https://discord.gg/aVzAaU98U7"
+                                class="inline-link"
+                            >
+                                Open Support Server
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-label">
+                            Privacy Email
+                        </div>
+
+                        <div class="contact-value">
+
+                            <a
+                                href="mailto:contact.me.for.question@gmail.com"
+                                class="inline-link"
+                            >
+                                contact.me.for.question@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-label">
+                            Terms
+                        </div>
+
+                        <div class="contact-value">
+
+                            <a
+                                href="terms.html"
+                                class="inline-link"
+                            >
+                                Terms of Service
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 17 -->
+
+            <section
+                class="section"
+                id="effective"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        17
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Document Status
+                        </div>
+
+                        <h2>
+                            Effective Date
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    This Privacy Policy is effective as of
+                    <strong>
+                        October 2, 2026
+                    </strong>.
+
+                </p>
+
+
+                <p>
+
+                    The current version of this Privacy Policy
+                    is maintained at this official legal page.
+
+                </p>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ===================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-left">
+
+            © 2026
+
+            <strong>
+                4n7 Moderation
+            </strong>
+
+            · Privacy Policy
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="terms.html">
+                Terms
+            </a>
+
+            <a href="#requests">
+                Data Requests
+            </a>
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+</html>
