@@ -1,0 +1,2976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>4n7 Moderation — Terms of Service</title>
+
+    <meta
+        name="description"
+        content="Official Terms of Service for 4n7 Moderation."
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+
+            --black-0: #030303;
+            --black-1: #070707;
+            --black-2: #0c0c0c;
+            --black-3: #111111;
+            --black-4: #161616;
+
+            --red-1: #ff1f1f;
+            --red-2: #d90000;
+            --red-3: #9e0000;
+            --red-soft: rgba(255, 31, 31, 0.12);
+            --red-border: rgba(255, 31, 31, 0.26);
+
+            --white: #f7f7f7;
+            --gray-1: #cfcfcf;
+            --gray-2: #9b9b9b;
+            --gray-3: #707070;
+            --gray-4: #454545;
+
+            --border: rgba(255, 255, 255, 0.075);
+
+            --shadow:
+                0 25px 80px rgba(0, 0, 0, 0.60);
+
+            --radius: 18px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 95px;
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            color: var(--white);
+
+            font-family:
+                "Inter",
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            line-height: 1.75;
+
+            background:
+
+                radial-gradient(
+                    circle at 10% 0%,
+                    rgba(255, 0, 0, 0.14),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 95% 15%,
+                    rgba(190, 0, 0, 0.10),
+                    transparent 27%
+                ),
+
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(255, 0, 0, 0.07),
+                    transparent 30%
+                ),
+
+                var(--black-0);
+
+            overflow-x: hidden;
+        }
+
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -2;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(255, 255, 255, 0.018) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.018) 1px,
+                    transparent 1px
+                );
+
+            background-size:
+                45px 45px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black 0%,
+                    rgba(0,0,0,0.7) 45%,
+                    transparent 100%
+                );
+        }
+
+
+        body::after {
+
+            content: "";
+
+            position: fixed;
+
+            width: 500px;
+            height: 500px;
+
+            top: -240px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            pointer-events: none;
+
+            z-index: -1;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255, 0, 0, 0.15),
+                    transparent 68%
+                );
+
+            filter: blur(12px);
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        /* ====================================
+           TOP NAVIGATION
+        ==================================== */
+
+        .topbar {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            border-bottom:
+                1px solid var(--border);
+
+            background:
+                rgba(3, 3, 3, 0.84);
+
+            backdrop-filter:
+                blur(22px);
+
+            -webkit-backdrop-filter:
+                blur(22px);
+        }
+
+
+        .topbar::after {
+
+            content: "";
+
+            position: absolute;
+
+            bottom: -1px;
+            left: 0;
+
+            width: 100%;
+            height: 1px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255, 30, 30, 0.60),
+                    transparent
+                );
+        }
+
+
+        .topbar-inner {
+
+            width: min(1380px, 94%);
+
+            min-height: 76px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 13px;
+        }
+
+
+        .brand-logo {
+
+            width: 43px;
+            height: 43px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 13px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #ff3434,
+                    #a50000
+                );
+
+            border:
+                1px solid
+                rgba(255, 100, 100, 0.35);
+
+            box-shadow:
+                0 0 30px
+                rgba(255, 0, 0, 0.24),
+
+                inset 0 1px 0
+                rgba(255, 255, 255, 0.14);
+
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+
+        .brand-text {
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        .brand-title {
+
+            color: white;
+
+            font-size: 15px;
+
+            font-weight: 900;
+
+            letter-spacing: 0.3px;
+        }
+
+
+        .brand-subtitle {
+
+            margin-top: -1px;
+
+            color: var(--gray-3);
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+        }
+
+
+        .top-actions {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+        }
+
+
+        .nav-button {
+
+            padding:
+                9px 14px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 10px;
+
+            color: var(--gray-1);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            transition:
+                all 0.22s ease;
+        }
+
+
+        .nav-button:hover {
+
+            color: white;
+
+            border-color:
+                var(--red-border);
+
+            background:
+                var(--red-soft);
+
+            transform:
+                translateY(-1px);
+        }
+
+
+        .nav-button.primary {
+
+            color: white;
+
+            border-color:
+                rgba(255, 31, 31, 0.40);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 31, 31, 0.18),
+                    rgba(255, 31, 31, 0.06)
+                );
+        }
+
+
+        /* ====================================
+           HERO
+        ==================================== */
+
+        .hero {
+
+            width: min(1380px, 94%);
+
+            margin: auto;
+
+            padding:
+                92px 0 60px;
+        }
+
+
+        .hero-badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding:
+                8px 12px;
+
+            border:
+                1px solid
+                var(--red-border);
+
+            border-radius: 999px;
+
+            background:
+                rgba(255, 0, 0, 0.06);
+
+            color:
+                #ff7777;
+
+            font-size: 10px;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            text-transform: uppercase;
+
+            box-shadow:
+                0 0 30px
+                rgba(255, 0, 0, 0.05);
+        }
+
+
+        .hero-badge-dot {
+
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background:
+                var(--red-1);
+
+            box-shadow:
+                0 0 14px
+                var(--red-1);
+        }
+
+
+        .hero h1 {
+
+            max-width: 980px;
+
+            margin-top: 24px;
+
+            font-size:
+                clamp(
+                    45px,
+                    7vw,
+                    86px
+                );
+
+            line-height: 0.98;
+
+            letter-spacing:
+                -4px;
+
+            font-weight: 900;
+        }
+
+
+        .hero h1 .red {
+
+            color:
+                var(--red-1);
+
+            text-shadow:
+                0 0 40px
+                rgba(255, 0, 0, 0.16);
+        }
+
+
+        .hero-description {
+
+            max-width: 830px;
+
+            margin-top: 24px;
+
+            color:
+                var(--gray-2);
+
+            font-size: 16px;
+        }
+
+
+        .hero-meta {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 31px;
+        }
+
+
+        .hero-meta-card {
+
+            min-width: 155px;
+
+            padding:
+                13px 16px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius: 12px;
+
+            background:
+                rgba(255, 255, 255, 0.025);
+
+            box-shadow:
+                inset 0 1px 0
+                rgba(255, 255, 255, 0.025);
+        }
+
+
+        .hero-meta-label {
+
+            color:
+                var(--gray-3);
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing:
+                1.2px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        .hero-meta-value {
+
+            margin-top: 2px;
+
+            color: white;
+
+            font-size: 12px;
+
+            font-weight: 700;
+        }
+
+
+        /* ====================================
+           LEGAL STATUS
+        ==================================== */
+
+        .status-bar {
+
+            width: min(1380px, 94%);
+
+            margin:
+                0 auto 28px;
+
+            padding:
+                16px 18px;
+
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 13px;
+
+            border:
+                1px solid
+                var(--red-border);
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(
+                    110deg,
+                    rgba(255, 0, 0, 0.095),
+                    rgba(255, 255, 255, 0.018)
+                );
+
+            box-shadow:
+                0 18px 60px
+                rgba(0, 0, 0, 0.24);
+        }
+
+
+        .status-icon {
+
+            flex-shrink: 0;
+
+            width: 32px;
+            height: 32px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 10px;
+
+            color: white;
+
+            background:
+                rgba(255, 20, 20, 0.16);
+
+            border:
+                1px solid
+                rgba(255, 40, 40, 0.25);
+
+            font-size: 14px;
+
+            font-weight: 900;
+        }
+
+
+        .status-text strong {
+
+            color: #ff6a6a;
+
+            font-size: 12px;
+        }
+
+
+        .status-text p {
+
+            margin-top: 2px;
+
+            color:
+                var(--gray-2);
+
+            font-size: 12px;
+        }
+
+
+        /* ====================================
+           MAIN LAYOUT
+        ==================================== */
+
+        .layout {
+
+            width: min(1380px, 94%);
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                250px
+                minmax(0, 1fr);
+
+            gap: 28px;
+
+            align-items: start;
+        }
+
+
+        /* ====================================
+           SIDEBAR
+        ==================================== */
+
+        .sidebar {
+
+            position: sticky;
+
+            top: 99px;
+
+            padding: 17px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                rgba(11, 11, 11, 0.74);
+
+            backdrop-filter:
+                blur(18px);
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .sidebar-heading {
+
+            padding:
+                4px 8px 12px;
+
+            color:
+                var(--gray-3);
+
+            font-size: 9px;
+
+            font-weight: 900;
+
+            letter-spacing:
+                1.6px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        .sidebar-link {
+
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            padding:
+                9px 10px;
+
+            margin-bottom: 2px;
+
+            border-radius: 9px;
+
+            color:
+                var(--gray-2);
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            transition:
+                all 0.2s ease;
+        }
+
+
+        .sidebar-link span {
+
+            width: 22px;
+
+            color:
+                var(--gray-4);
+
+            font-size: 9px;
+
+            font-weight: 800;
+        }
+
+
+        .sidebar-link:hover {
+
+            color: white;
+
+            background:
+                rgba(255, 0, 0, 0.06);
+        }
+
+
+        .sidebar-link:hover span {
+
+            color:
+                var(--red-1);
+        }
+
+
+        .sidebar-divider {
+
+            height: 1px;
+
+            margin:
+                11px 8px;
+
+            background:
+                var(--border);
+        }
+
+
+        /* ====================================
+           DOCUMENT
+        ==================================== */
+
+        .document {
+
+            min-width: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+        }
+
+
+        .section {
+
+            position: relative;
+
+            padding:
+                34px 35px 35px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(19, 19, 19, 0.94),
+                    rgba(9, 9, 9, 0.94)
+                );
+
+            box-shadow:
+                0 14px 50px
+                rgba(0, 0, 0, 0.30);
+
+            overflow: hidden;
+
+            transition:
+                border-color 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        .section::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 2px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255, 31, 31, 0.55),
+                    transparent
+                );
+        }
+
+
+        .section:hover {
+
+            transform:
+                translateY(-2px);
+
+            border-color:
+                rgba(255, 40, 40, 0.18);
+
+            box-shadow:
+                0 22px 65px
+                rgba(0, 0, 0, 0.42);
+        }
+
+
+        .section-head {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .section-number {
+
+            flex-shrink: 0;
+
+            width: 40px;
+            height: 40px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 11px;
+
+            border:
+                1px solid
+                rgba(255, 31, 31, 0.22);
+
+            background:
+                rgba(255, 20, 20, 0.07);
+
+            color:
+                #ff5d5d;
+
+            font-size: 10px;
+
+            font-weight: 900;
+
+            letter-spacing:
+                0.5px;
+        }
+
+
+        .section-title-wrap {
+
+            min-width: 0;
+        }
+
+
+        .section-kicker {
+
+            color:
+                var(--gray-3);
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing:
+                1.3px;
+
+            text-transform:
+                uppercase;
+        }
+
+
+        .section h2 {
+
+            margin-top: 1px;
+
+            color: white;
+
+            font-size: 23px;
+
+            line-height: 1.25;
+
+            letter-spacing:
+                -0.45px;
+        }
+
+
+        .section p {
+
+            color:
+                var(--gray-2);
+
+            font-size: 13.5px;
+        }
+
+
+        .section p + p {
+
+            margin-top:
+                14px;
+        }
+
+
+        .section ul {
+
+            margin:
+                15px 0 0 4px;
+
+            padding-left:
+                17px;
+
+            color:
+                var(--gray-2);
+
+            font-size:
+                13.5px;
+        }
+
+
+        .section li {
+
+            margin:
+                8px 0;
+
+            padding-left:
+                4px;
+        }
+
+
+        .section li::marker {
+
+            color:
+                var(--red-1);
+        }
+
+
+        .section strong {
+
+            color: white;
+        }
+
+
+        .red-text {
+
+            color:
+                #ff6969;
+        }
+
+
+        .inline-link {
+
+            color:
+                #ff7272;
+
+            font-weight:
+                700;
+
+            border-bottom:
+                1px dotted
+                rgba(255, 80, 80, 0.45);
+        }
+
+
+        .inline-link:hover {
+
+            color: white;
+
+            border-bottom-color:
+                white;
+        }
+
+
+        /* ====================================
+           CALLOUTS
+        ==================================== */
+
+        .callout {
+
+            margin-top:
+                19px;
+
+            padding:
+                16px 17px;
+
+            display: flex;
+
+            align-items:
+                flex-start;
+
+            gap: 13px;
+
+            border-radius:
+                13px;
+
+            background:
+                rgba(255, 255, 255, 0.025);
+
+            border:
+                1px solid
+                var(--border);
+        }
+
+
+        .callout.red {
+
+            background:
+                rgba(255, 0, 0, 0.055);
+
+            border-color:
+                rgba(255, 31, 31, 0.18);
+        }
+
+
+        .callout-icon {
+
+            flex-shrink: 0;
+
+            width: 30px;
+            height: 30px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 9px;
+
+            background:
+                rgba(255, 0, 0, 0.11);
+
+            color:
+                #ff6666;
+
+            font-size:
+                13px;
+
+            font-weight: 900;
+        }
+
+
+        .callout-content strong {
+
+            display: block;
+
+            margin-bottom: 2px;
+
+            color:
+                white;
+
+            font-size:
+                12px;
+        }
+
+
+        .callout-content {
+
+            color:
+                var(--gray-2);
+
+            font-size:
+                12px;
+        }
+
+
+        /* ====================================
+           CONTACT CARDS
+        ==================================== */
+
+        .contact-grid {
+
+            margin-top:
+                22px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(0, 1fr)
+                );
+
+            gap: 11px;
+        }
+
+
+        .contact-card {
+
+            padding:
+                17px;
+
+            border:
+                1px solid
+                var(--border);
+
+            border-radius:
+                13px;
+
+            background:
+                rgba(255, 255, 255, 0.018);
+
+            transition:
+                all 0.2s ease;
+        }
+
+
+        .contact-card:hover {
+
+            border-color:
+                rgba(255, 40, 40, 0.19);
+
+            background:
+                rgba(255, 0, 0, 0.035);
+        }
+
+
+        .contact-label {
+
+            color:
+                var(--gray-3);
+
+            font-size:
+                9px;
+
+            font-weight:
+                900;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                1.2px;
+        }
+
+
+        .contact-value {
+
+            margin-top:
+                5px;
+
+            color:
+                white;
+
+            font-size:
+                12.5px;
+
+            font-weight:
+                700;
+
+            overflow-wrap:
+                anywhere;
+        }
+
+
+        /* ====================================
+           FOOTER
+        ==================================== */
+
+        .footer {
+
+            width: min(1380px, 94%);
+
+            margin:
+                0 auto;
+
+            padding:
+                46px 0 38px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            border-top:
+                1px solid
+                var(--border);
+
+            color:
+                var(--gray-3);
+
+            font-size:
+                11px;
+        }
+
+
+        .footer-left strong {
+
+            color:
+                var(--gray-1);
+        }
+
+
+        .footer-links {
+
+            display:
+                flex;
+
+            gap:
+                15px;
+        }
+
+
+        .footer-links a:hover {
+
+            color:
+                #ff6868;
+        }
+
+
+        /* ====================================
+           MOBILE
+        ==================================== */
+
+        @media (max-width: 950px) {
+
+            .layout {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .sidebar {
+
+                display:
+                    none;
+            }
+
+
+            .hero {
+
+                padding-top:
+                    64px;
+            }
+        }
+
+
+        @media (max-width: 640px) {
+
+            .topbar-inner {
+
+                min-height:
+                    67px;
+            }
+
+
+            .top-actions {
+
+                display:
+                    none;
+            }
+
+
+            .hero {
+
+                padding:
+                    48px 0 40px;
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    48px;
+
+                letter-spacing:
+                    -2.5px;
+            }
+
+
+            .hero-description {
+
+                font-size:
+                    14px;
+            }
+
+
+            .hero-meta-card {
+
+                flex:
+                    1 1 140px;
+            }
+
+
+            .status-bar {
+
+                align-items:
+                    flex-start;
+            }
+
+
+            .section {
+
+                padding:
+                    26px 21px;
+            }
+
+
+            .section h2 {
+
+                font-size:
+                    20px;
+            }
+
+
+            .contact-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .footer {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ====================================
+         TOP BAR
+    ==================================== -->
+
+    <header class="topbar">
+
+        <div class="topbar-inner">
+
+
+            <div class="brand">
+
+
+                <div class="brand-logo">
+                    4
+                </div>
+
+
+                <div class="brand-text">
+
+                    <div class="brand-title">
+                        4n7 Moderation
+                    </div>
+
+                    <div class="brand-subtitle">
+                        Legal Center
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <a
+                    class="nav-button"
+                    href="index.html"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    class="nav-button"
+                    href="privacy.html"
+                >
+                    Privacy Policy
+                </a>
+
+
+                <a
+                    class="nav-button primary"
+                    href="#contact"
+                >
+                    Contact
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ====================================
+         HERO
+    ==================================== -->
+
+    <section class="hero">
+
+
+        <div class="hero-badge">
+
+            <span class="hero-badge-dot"></span>
+
+            Official Legal Document
+
+        </div>
+
+
+        <h1>
+
+            Terms of
+
+            <span class="red">
+                Service
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            These Terms of Service establish the rules,
+            responsibilities, and conditions governing
+            your use of 4n7 Moderation, a Discord
+            moderation and server-management application.
+
+        </p>
+
+
+        <div class="hero-meta">
+
+
+            <div class="hero-meta-card">
+
+                <div class="hero-meta-label">
+                    Document
+                </div>
+
+                <div class="hero-meta-value">
+                    Terms of Service
+                </div>
+
+            </div>
+
+
+            <div class="hero-meta-card">
+
+                <div class="hero-meta-label">
+                    Version
+                </div>
+
+                <div class="hero-meta-value">
+                    1.0
+                </div>
+
+            </div>
+
+
+            <div class="hero-meta-card">
+
+                <div class="hero-meta-label">
+                    Last Updated
+                </div>
+
+                <div class="hero-meta-value">
+                    October 2, 2026
+                </div>
+
+            </div>
+
+
+            <div class="hero-meta-card">
+
+                <div class="hero-meta-label">
+                    Service
+                </div>
+
+                <div class="hero-meta-value">
+                    4n7 Moderation
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ====================================
+         STATUS NOTICE
+    ==================================== -->
+
+    <div class="status-bar">
+
+
+        <div class="status-icon">
+            !
+        </div>
+
+
+        <div class="status-text">
+
+            <strong>
+                Please read these Terms carefully.
+            </strong>
+
+            <p>
+                By adding or using 4n7 Moderation, you acknowledge
+                that you have reviewed these Terms and agree to
+                comply with them and with applicable Discord policies.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- ====================================
+         MAIN CONTENT
+    ==================================== -->
+
+    <div class="layout">
+
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-heading">
+                Contents
+            </div>
+
+
+            <a
+                class="sidebar-link"
+                href="#acceptance"
+            >
+                <span>01</span>
+                Acceptance of Terms
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#service"
+            >
+                <span>02</span>
+                Service Description
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#discord"
+            >
+                <span>03</span>
+                Discord
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#administrators"
+            >
+                <span>04</span>
+                Server Administrators
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#acceptable-use"
+            >
+                <span>05</span>
+                Acceptable Use
+            </a>
+
+
+            <div class="sidebar-divider"></div>
+
+
+            <a
+                class="sidebar-link"
+                href="#moderation"
+            >
+                <span>06</span>
+                Moderation Actions
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#data"
+            >
+                <span>07</span>
+                Data
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#availability"
+            >
+                <span>08</span>
+                Availability
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#changes"
+            >
+                <span>09</span>
+                Service Changes
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#termination"
+            >
+                <span>10</span>
+                Termination
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#disclaimer"
+            >
+                <span>11</span>
+                Disclaimer
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#liability"
+            >
+                <span>12</span>
+                Liability
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#changes-terms"
+            >
+                <span>13</span>
+                Changes to Terms
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#contact"
+            >
+                <span>14</span>
+                Contact
+            </a>
+
+
+            <a
+                class="sidebar-link"
+                href="#effective"
+            >
+                <span>15</span>
+                Effective Date
+            </a>
+
+
+        </aside>
+
+
+
+        <!-- DOCUMENT -->
+
+        <main class="document">
+
+
+            <!-- 01 -->
+
+            <section
+                class="section"
+                id="acceptance"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        01
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Agreement
+                        </div>
+
+                        <h2>
+                            Acceptance of Terms
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    By adding, accessing, using, or interacting
+                    with 4n7 Moderation ("the Bot", "4n7", or
+                    "the Service"), you acknowledge that you have
+                    read, understood, and agree to be bound by these
+                    Terms of Service.
+
+                </p>
+
+
+                <p>
+
+                    If you do not agree with these Terms, you should
+                    not add the Bot to a Discord server or otherwise
+                    use the Service.
+
+                </p>
+
+
+                <div class="callout red">
+
+                    <div class="callout-icon">
+                        ✓
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Your use constitutes acceptance.
+                        </strong>
+
+                        Continuing to use the Service after
+                        an updated version becomes effective
+                        constitutes acceptance of the updated Terms,
+                        subject to applicable law.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 02 -->
+
+            <section
+                class="section"
+                id="service"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        02
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            The Bot
+                        </div>
+
+                        <h2>
+                            Description of the Service
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    4n7 Moderation is a Discord application designed
+                    to provide server moderation, administrative,
+                    safety, utility, and management tools.
+
+                </p>
+
+
+                <p>
+                    Depending on the configuration of a server,
+                    the Service may provide features including:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Warnings and warning management
+                    </li>
+
+                    <li>
+                        Bans, unbans, kicks, and softbans
+                    </li>
+
+                    <li>
+                        User timeouts through Discord's moderation system
+                    </li>
+
+                    <li>
+                        Message deletion and channel moderation
+                    </li>
+
+                    <li>
+                        Slowmode, locking, and unlocking
+                    </li>
+
+                    <li>
+                        Staff role management
+                    </li>
+
+                    <li>
+                        Deleted-message and edited-message snipe features
+                    </li>
+
+                    <li>
+                        Auto moderation and anti-spam protections
+                    </li>
+
+                    <li>
+                        Moderation records and server logs
+                    </li>
+
+                    <li>
+                        General server utility commands
+                    </li>
+
+                </ul>
+
+
+                <p>
+
+                    Features may change over time. New features may
+                    be introduced, and existing features may be
+                    modified, disabled, or removed.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 03 -->
+
+            <section
+                class="section"
+                id="discord"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        03
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Platform
+                        </div>
+
+                        <h2>
+                            Discord
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    4n7 Moderation operates through Discord's
+                    platform, APIs, servers, permissions, and
+                    related infrastructure.
+
+                </p>
+
+
+                <p>
+
+                    4n7 Moderation is an independent third-party
+                    application. It is not owned, operated, sponsored,
+                    or endorsed by Discord Inc.
+
+                </p>
+
+
+                <p>
+
+                    Your use of Discord remains subject to Discord's
+                    own Terms of Service, Community Guidelines,
+                    Developer Terms, Developer Policy, and other
+                    applicable rules and policies.
+
+                </p>
+
+
+                <div class="callout">
+
+                    <div class="callout-icon">
+                        D
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Discord policies still apply.
+                        </strong>
+
+                        Nothing in these Terms grants permission to
+                        violate Discord's policies or applicable law.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 04 -->
+
+            <section
+                class="section"
+                id="administrators"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        04
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Responsibility
+                        </div>
+
+                        <h2>
+                            Server Administrators
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Server owners and administrators are responsible
+                    for how 4n7 Moderation is configured and used
+                    within their server.
+
+                </p>
+
+
+                <p>
+                    Administrators should:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Assign the Bot only the permissions it needs
+                    </li>
+
+                    <li>
+                        Maintain appropriate role hierarchy
+                    </li>
+
+                    <li>
+                        Configure moderator and administrator role IDs
+                        correctly
+                    </li>
+
+                    <li>
+                        Review AutoMod configuration
+                    </li>
+
+                    <li>
+                        Review moderation actions and logs
+                    </li>
+
+                    <li>
+                        Ensure staff members use moderation tools
+                        appropriately
+                    </li>
+
+                </ul>
+
+
+                <p>
+
+                    Server administrators are responsible for
+                    decisions made by their staff and for the
+                    configuration of their own Discord server.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 05 -->
+
+            <section
+                class="section"
+                id="acceptable-use"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        05
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Restrictions
+                        </div>
+
+                        <h2>
+                            Acceptable Use
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    You agree not to use the Service to:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Violate applicable laws or regulations
+                    </li>
+
+                    <li>
+                        Violate Discord's Terms, policies,
+                        or Community Guidelines
+                    </li>
+
+                    <li>
+                        Attempt to gain unauthorized access
+                        to the Bot or its infrastructure
+                    </li>
+
+                    <li>
+                        Intentionally disrupt the Service
+                        or its infrastructure
+                    </li>
+
+                    <li>
+                        Attempt to bypass security mechanisms
+                    </li>
+
+                    <li>
+                        Abuse moderation functionality
+                    </li>
+
+                    <li>
+                        Use the Bot to facilitate malicious,
+                        fraudulent, or abusive activity
+                    </li>
+
+                </ul>
+
+
+                <div class="callout red">
+
+                    <div class="callout-icon">
+                        !
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Security violations are prohibited.
+                        </strong>
+
+                        Attempts to compromise the Bot, its database,
+                        hosting environment, or other infrastructure
+                        are not permitted.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 06 -->
+
+            <section
+                class="section"
+                id="moderation"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        06
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Moderation
+                        </div>
+
+                        <h2>
+                            Moderation Actions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Authorized server staff and configured automated
+                    systems may use the Bot to perform moderation
+                    actions such as warnings, timeouts, kicks, bans,
+                    softbans, message deletion, and role removal.
+
+                </p>
+
+
+                <p>
+
+                    Some actions depend on Discord permissions,
+                    role hierarchy, channel permissions, API
+                    availability, target-user status, and server
+                    configuration.
+
+                </p>
+
+
+                <p>
+
+                    4n7 Moderation does not guarantee that an
+                    individual moderation action will always succeed.
+
+                </p>
+
+
+                <div class="callout">
+
+                    <div class="callout-icon">
+                        i
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Server staff remain responsible for their actions.
+                        </strong>
+
+                        The Bot provides tools; server administrators
+                        determine how those tools are configured and used.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 07 -->
+
+            <section
+                class="section"
+                id="data"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        07
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Information
+                        </div>
+
+                        <h2>
+                            Data
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    To provide certain features, 4n7 Moderation may
+                    process Discord-related information. Depending
+                    on how a server uses the Bot, this may include:
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Discord user IDs
+                    </li>
+
+                    <li>
+                        Discord server IDs
+                    </li>
+
+                    <li>
+                        Discord channel IDs
+                    </li>
+
+                    <li>
+                        Discord role IDs
+                    </li>
+
+                    <li>
+                        Warning and moderation records
+                    </li>
+
+                    <li>
+                        Server configuration information
+                    </li>
+
+                    <li>
+                        Message information required by snipe
+                        or moderation features
+                    </li>
+
+                    <li>
+                        Moderation log information
+                    </li>
+
+                </ul>
+
+
+                <p>
+
+                    Details about collection, storage, use,
+                    retention, and deletion are described in
+                    our
+
+                    <a
+                        href="privacy.html"
+                        class="inline-link"
+                    >
+                        Privacy Policy
+                    </a>.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 08 -->
+
+            <section
+                class="section"
+                id="availability"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        08
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Service Status
+                        </div>
+
+                        <h2>
+                            Availability
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    We aim to keep the Service available and
+                    functional, but we do not guarantee continuous,
+                    uninterrupted, or error-free availability.
+
+                </p>
+
+
+                <p>
+                    Interruptions may result from:
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        Scheduled or emergency maintenance
+                    </li>
+
+                    <li>
+                        Software bugs
+                    </li>
+
+                    <li>
+                        Hosting issues
+                    </li>
+
+                    <li>
+                        Database failures
+                    </li>
+
+                    <li>
+                        Network problems
+                    </li>
+
+                    <li>
+                        Discord outages or API changes
+                    </li>
+
+                    <li>
+                        Third-party service failures
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+
+            <!-- 09 -->
+
+            <section
+                class="section"
+                id="changes"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        09
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Updates
+                        </div>
+
+                        <h2>
+                            Changes to the Service
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    We may add, modify, suspend, or discontinue
+                    features of 4n7 Moderation at any time.
+
+                </p>
+
+
+                <p>
+
+                    Changes may be necessary because of development,
+                    security requirements, Discord API changes,
+                    technical limitations, or operational needs.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 10 -->
+
+            <section
+                class="section"
+                id="termination"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        10
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Access
+                        </div>
+
+                        <h2>
+                            Termination
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Server owners may remove 4n7 Moderation from
+                    their Discord server at any time.
+
+                </p>
+
+
+                <p>
+
+                    Access to the Service may also be restricted
+                    or terminated when necessary to address abuse,
+                    security concerns, policy violations, or
+                    operational requirements.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 11 -->
+
+            <section
+                class="section"
+                id="disclaimer"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        11
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Disclaimer
+                        </div>
+
+                        <h2>
+                            Disclaimer of Warranties
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    To the extent permitted by applicable law,
+                    4n7 Moderation is provided on an "as available"
+                    and "as is" basis.
+
+                </p>
+
+
+                <p>
+
+                    We do not guarantee that the Service will always
+                    be accurate, secure, available, uninterrupted,
+                    compatible with every Discord configuration,
+                    or free of defects and errors.
+
+                </p>
+
+
+                <div class="callout">
+
+                    <div class="callout-icon">
+                        i
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Technical limitations may apply.
+                        </strong>
+
+                        Discord permissions, API behavior, role
+                        hierarchy, network conditions, and third-party
+                        infrastructure can affect the Service.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 12 -->
+
+            <section
+                class="section"
+                id="liability"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        12
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Legal
+                        </div>
+
+                        <h2>
+                            Limitation of Liability
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    To the maximum extent permitted by applicable law,
+                    4n7 Moderation and its developers will not be
+                    responsible for losses or damages arising from
+                    the use of, or inability to use, the Service.
+
+                </p>
+
+
+                <p>
+
+                    This may include, where legally permitted,
+                    consequences arising from moderation actions,
+                    incorrect configuration, deleted content,
+                    service interruptions, software errors,
+                    database issues, or Discord platform changes.
+
+                </p>
+
+
+                <p>
+
+                    Nothing in these Terms is intended to exclude
+                    liability that cannot lawfully be excluded or
+                    limited under applicable law.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- 13 -->
+
+            <section
+                class="section"
+                id="changes-terms"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        13
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Policy Updates
+                        </div>
+
+                        <h2>
+                            Changes to These Terms
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    These Terms may be updated from time to time.
+                    The current version will be published on this
+                    page.
+
+                </p>
+
+
+                <p>
+
+                    When appropriate, material changes may be
+                    accompanied by an updated effective or revision
+                    date.
+
+                </p>
+
+
+                <div class="callout red">
+
+                    <div class="callout-icon">
+                        ↻
+                    </div>
+
+                    <div class="callout-content">
+
+                        <strong>
+                            Check the revision date.
+                        </strong>
+
+                        The date displayed at the top of this
+                        document identifies the current published
+                        version.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 14 -->
+
+            <section
+                class="section"
+                id="contact"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        14
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Support
+                        </div>
+
+                        <h2>
+                            Contact
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Questions, concerns, or requests concerning
+                    4n7 Moderation or these Terms may be directed
+                    through the contact methods below.
+
+                </p>
+
+
+                <div class="contact-grid">
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-label">
+                            Developer
+                        </div>
+
+                        <div class="contact-value">
+                            4n7
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-label">
+                            Support Server
+                        </div>
+
+                        <div class="contact-value">
+
+                            <a
+                                href="https://discord.gg/aVzAaU98U7"
+                                class="inline-link"
+                            >
+                                Open Support Server
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-label">
+                            Email
+                        </div>
+
+                        <div class="contact-value">
+
+                            <a
+                                href="mailto:contact.me.for.question@gmail.com"
+                                class="inline-link"
+                            >
+                                contact.me.for.question@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-label">
+                            Privacy Policy
+                        </div>
+
+                        <div class="contact-value">
+
+                            <a
+                                href="privacy.html"
+                                class="inline-link"
+                            >
+                                View Privacy Policy
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- 15 -->
+
+            <section
+                class="section"
+                id="effective"
+            >
+
+                <div class="section-head">
+
+                    <div class="section-number">
+                        15
+                    </div>
+
+                    <div class="section-title-wrap">
+
+                        <div class="section-kicker">
+                            Document Status
+                        </div>
+
+                        <h2>
+                            Effective Date
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    These Terms of Service are effective as of
+                    <strong>
+                        October 2, 2026
+                    </strong>.
+
+                </p>
+
+
+                <p>
+
+                    The current version of this document is
+                    maintained at this official legal page.
+
+                </p>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ====================================
+         FOOTER
+    ==================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-left">
+
+            © 2026
+
+            <strong>
+                4n7 Moderation
+            </strong>
+
+            · Terms of Service
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="privacy.html">
+                Privacy
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+</html>
